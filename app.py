@@ -208,11 +208,11 @@ if uploaded_files:
         st.write("Score:", score)
 
         if zone == "RED":
-            st.error("🔴 RED ZONE")
+            st.error("RED ZONE")
         elif zone == "YELLOW":
-            st.warning("🟡 YELLOW ZONE")
+            st.warning("YELLOW ZONE")
         else:
-            st.success("🟢 GREEN ZONE")
+            st.success("GREEN ZONE")
 
 
 # Priority ranking
