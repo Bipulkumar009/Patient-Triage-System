@@ -78,6 +78,12 @@ def priority_score(vitals, chest_pain=False, bleeding=False):
             score += 50
         elif vitals['bp_sys'] < 100:
             score += 20
+    
+    if vitals['bp_sys'] is not None:
+        if vitals['bp_sys'] > 180:
+            score += 50
+        elif vitals['bp_sys'] < 160:
+            score += 20
 
     if vitals['rr'] is not None:
         if vitals['rr'] > 28:
